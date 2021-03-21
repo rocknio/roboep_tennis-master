@@ -1,0 +1,17 @@
+[[source]]
+name = "清华"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+opencv-python = "*"
+opencv-contrib-python = "*"
+numpy = "*"
+robomaster = "*"
+pyyaml = "*"
+pyinstaller = "*"
+
+[requires]
+python_version = "3.8"

@@ -1,0 +1,69 @@
+# 联网模式：ap直连, sta局域网
+conn_type: ap
+
+# 颜色范围（HSV）
+color_range:
+  # 绿色范围
+  green_lower:
+    - 29
+    - 90
+    - 80
+  green_upper:
+    - 64
+    - 255
+    - 220
+  # 红色范围
+  red_lower:
+    - 0
+    - 90
+    - 40
+  red_upper:
+    - 16
+    - 255
+    - 220
+  # 蓝色范围
+  blue_lower:
+    - 0
+    - 90
+    - 40
+  blue_upper:
+    - 16
+    - 255
+    - 220
+
+# 面积范围
+area_range:
+  # 网球检测面积范围（像素）
+  circle_min: 1000
+  circle_max: 32000
+  # 矩形检测面积范围（像素）
+  rect_min: 5000
+  rect_max: 250000
+
+# 尺寸范围
+size_range:
+  # 网球检测忽略边缘距离（像素）
+  circle_ignore_edge: 200
+  # 矩形检测忽略边缘距离（像素）
+  rect_ignore_edge: 50
+  # 网球实际半径（cm）
+  ball_actual_radius: 3.25
+  # 盒子实际宽度范围（cm）
+  box_actual_width_min: 19.0
+  box_actual_width_max: 28.0
+  # 盒子实际高度范围（cm）
+  box_actual_height_min: 16.0
+  box_actual_height_max: 19.0
+
+# 运动控制参数
+ctrl_param:
+  # 深度探测最小限定距离（cm）
+  tof_distance_min: 17.0
+  # 麦轮默认旋转速度（rpm）
+  wheel_speed: 30
+  # 网球前向距离修正（cm）
+  ball_offset: 29
+  # 盒子前向距离修正（cm）
+  box_offset: 40
+  # 前向运动趋近比率
+  forward_rate: 0.83
